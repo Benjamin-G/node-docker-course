@@ -14,7 +14,7 @@ services:
       - db
     # GOOD: 
     volumes:
-      - ./content:/var/lib/ghost/content:delegated
+      - ./content:/var/lib/ghost/content:delegated #the container can get ahead
     environment:
       database__client: mysql
       database__connection__host: db
