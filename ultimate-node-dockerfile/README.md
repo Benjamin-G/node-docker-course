@@ -11,16 +11,16 @@ of the "result" app using all the things you learned in this section.
 ## The finished Dockerfile should include
 
 * Create a multi-stage Dockerfile that supports specific images for
-production, testing, and development.
-* devDependencies should not exist in production image.
-* Use `npm ci` to install production dependencies.
+production, testing, and development.X
+* devDependencies should not exist in production image.X
+* Use `npm ci` to install production dependencies.X
 * Use Scenario 1 for setting up node_modules (the simple version).
-* Set NODE_ENV properly for dev and prod.
+* Set NODE_ENV properly for dev and prod.X
 * The dev stage should run nodemon from devDependencies. Either by
-updating the `$PATH` or hard-coding the path to nodemon.
+updating the `$PATH` or hard-coding the path to nodemon.X
 * Edit docker-compose.yml to target the dev stage.
 * Add LABELS from OCI standard (values are up to you) to all images.
-* Add `npm config list` output before running `npm install`.
+* Add `npm config list` output before running `npm install`.X
 * Create a test stage that runs `npm audit`.
 * `./tests` directory should only exist in test image.
 * Healthchecks should be added for production image.
